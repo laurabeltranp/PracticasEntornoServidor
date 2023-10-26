@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registro de contacto</title>
+</head>
+<body>
+
+	<h3>Registro de contacto</h3>
+	<form action="" method="post">
+		<div>
+			<label for="nombre">Nombre: </label>
+			<input id="nombre" type="text" placeholder="escriba su nombre">
+		</div>
+		<div>
+			<label for="movil">Teléfono: </label>
+			<input id="movil" type="text" placeholder="escriba su telefono">
+		</div>
+		<div>
+			<label for="email">Email: </label>
+			<input id="email" type="email" placeholder="escriba su email">
+		</div>
+		<div>
+			<label for="fechaNacimiento">Fecha de nacimiento: </label>
+			<input id="fechaNacimiento" type="date">
+		</div>
+		<button>
+			Guardar
+		</button>
+		<a href="/">
+			Cancelar
+		</a>
+	</form>
+</body>
+</html>

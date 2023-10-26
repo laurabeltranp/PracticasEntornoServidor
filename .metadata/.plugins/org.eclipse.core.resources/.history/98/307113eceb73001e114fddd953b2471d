@@ -1,0 +1,24 @@
+package com.agenda.controlador;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.agenda.modelo.Contacto;
+
+@Controller
+public class ContactoController {
+
+	//Este método sirve para ver la pagina de inicio
+	@GetMapping({"/", ""}) 
+		public String verPaginaInicio (){
+			return "index";
+		}
+	//Esto dice que cuando cliquemos en nuevo
+	@GetMapping("/nuevo")
+	public String mostrarFormAltaContacto(Model modelo) {
+		modelo.addAttribute("contacto", new Contacto());
+		
+		return "nuevo";
+	}
+}

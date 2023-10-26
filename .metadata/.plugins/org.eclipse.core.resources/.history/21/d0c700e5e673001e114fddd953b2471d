@@ -1,0 +1,5 @@
+package com.agenda.repositorio;
+
+public interface ContactoRepositorio {
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Registro de contacto</title>
+</head>
+<body>
+
+	<h3>Registro de contacto</h3>
+	<form action="" method="post" th:object="${contacto}">
+		<div>
+			<label for="nombre">Nombre: </label>
+			<input id="nombre" type="text" placeholder="escriba su nombre" th:field="*{nombre}">
+			
+			<div th:errors="*{nombre}"></div>
+		</div>
+		<div>
+			<label for="movil">Teléfono: </label>
+			<input id="movil" type="text" placeholder="escriba su telefono" th:field="*{movil}">
+			<div th:errors="*{movil}"></div>
+		</div>
+		<div>
+			<label for="email">Email: </label>
+			<input id="email" type="email" placeholder="escriba su email" th:field="*{email}">
+			<div th:errors="*{email}"></div>
+		</div>
+		<div>
+			<label for="fechaNacimiento">Fecha de nacimiento: </label>
+			<input id="fechaNacimiento" type="date" th:field="*{fechaNacimiento}">
+			<div th:errors="*{fechaNacimiento}"></div>
+		</div>
+		<button>
+			Guardar
+		</button>
+		<a href="/">
+			Cancelar
+		</a>
+	</form>
+</body>
+</html>

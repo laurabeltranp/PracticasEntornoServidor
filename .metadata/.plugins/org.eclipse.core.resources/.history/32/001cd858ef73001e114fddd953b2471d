@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Lista de Contactos</title>
+</head>
+<body>
+	
+	<div th:if="${msgExito != null}">
+		[[${msgExito}]]
+	</div>
+	<h1>Lista de Contactos </h1>
+	<a href="/nuevo">Añadir contacto</a>
+
+</body>
+</html>
